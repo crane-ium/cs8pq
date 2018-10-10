@@ -21,7 +21,7 @@ struct heap{
     //MOD MEMBER FUNCTIONS
     void insert(const T& item);
     T pop(); //return top item and shuffle the node out of range
-    T top(); //return top item
+    T top() const; //return top item
 
     //CONST MEMBER FUNCTIONS
     bool is_empty() const;
@@ -56,7 +56,7 @@ void heap<T>::insert(const T& item){
     if(how_many == size_cap){ //create a newly sized array!
         height++;
         size_t new_size = pow(2,height) - 1;
-        int* temp       = new int[new_size];
+        T* temp       = new T[new_size];
         copy_arr(temp, it_arr, size_cap);
         delete[] it_arr;
         it_arr          = temp;
@@ -176,6 +176,11 @@ size_t heap<T>::size() const{
 template<class T>
 size_t heap<T>::capacity() const{
     return size_cap;
+}
+
+template<class T>
+T heap<T>::top() const{
+    return it_arr[0];
 }
 
 #endif // HEAP_H
