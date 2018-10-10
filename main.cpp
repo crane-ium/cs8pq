@@ -1,8 +1,13 @@
 #include <iostream>
+#include <random>
+#include <time.h>
 #include "heap.h"
 #include "arr_func.h"
+#include "priority_queue.h"
 
 using namespace std;
+
+int randint(int min, int max);
 
 int main()
 {
@@ -67,5 +72,36 @@ int main()
     cout << "GO!\n";
     while(!heap_int.is_empty())
         cout << heap_int.pop() << endl;
+    pqueue<int> pq;
+    pq.insert(1, 0);
+    pq.insert(2, 10);
+    pq.insert(3,-5);
+    pq.insert(4,15);
+    pq.insert(5,5);
+    pq.print();
+    while(!pq.is_empty())
+        cout << pq.pop() << endl;
+    //--- RANDOM INSERTION ---
+    cout << "Random insertion: \n";
+    for(int i; i < 100; i++)
+        pq.insert(randint(1,1000), randint(1,10));
+    int count = 0;
+    while(!pq.is_empty())
+        cout << setw(4) <<left<< (count++)<< ": "\
+             <<right<< pq.pop() << endl;
+    cout << "Show get operations: \n";
+    pq.insert(99, 10);
+    cout << "Item: " << pq.top().get_item() \
+         << " Priority: " << pq.top().get_priority() << endl;
     return 0;
+}
+
+int randint(int min, int max){
+    assert(max > 0);
+    static bool set_srand = false;
+    if(!set_srand){
+        srand(time(NULL));
+        set_srand = true;
+    }
+    return rand() % (max- min + 1) + min;
 }
