@@ -11,6 +11,7 @@ int randint(int min, int max);
 
 int main()
 {
+    cout << "----- DYNAMIC ARRAYS ------\n";
     int* arr = new int[3];
     arr[0] = 1;
     arr[1] = 2;
@@ -95,6 +96,8 @@ int main()
     cout << "Item: " << pq.top().get_item() \
          << " Priority: " << pq.top().get_priority() << endl;
 
+    //------ HEAP FUNCTIONALITY SHOWCASE --------
+    cout << "---- HEAP OUTPUTS ----\n";
     heap<info<int> > hap;
     hap.insert(info<int>(10, 1));
     hap.insert(info<int>(20,2));
@@ -102,12 +105,12 @@ int main()
     pq = hap;
     hap.print();
     heap<info<int> > hap2(hap);
-    hap2.pop();
+    hap2.insert(info<int>(40,4));
     hap2.print();
     heap<info<int> > hap3;
     hap3 = hap2;
+    hap3.insert(info<int>(50,5));
     hap3.print();
-    pq.print();
 
     return 0;
 }

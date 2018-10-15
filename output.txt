@@ -1,3 +1,4 @@
+----- DYNAMIC ARRAYS ------
 1
 2
 3
@@ -33,15 +34,15 @@ how_many/capacity: 11/15
 - Array -
 30
 25
-10
-10
 15
-2
+15
+10
+10
 5
-1
 4
 3
-15
+2
+1
 Popping
 30
 25
@@ -63,8 +64,8 @@ Round 3
 how_many/capacity: 4/15
 - Array -
 20
-10
 15
+10
 3
 POPPING PRINT!
 20
@@ -76,9 +77,9 @@ how_many/capacity: 5/7
 - Array -
 Item:          4  Priority:         15
 Item:          2  Priority:         10
-Item:          3  Priority:         -5
-Item:          1  Priority:          0
 Item:          5  Priority:          5
+Item:          1  Priority:          0
+Item:          3  Priority:         -5
 Printing by popping pqueue:
 Item:          4  Priority:         15
 Item:          2  Priority:         10
@@ -86,106 +87,128 @@ Item:          5  Priority:          5
 Item:          1  Priority:          0
 Item:          3  Priority:         -5
 Random insertion:
-0   : Item:        364  Priority:         10
-1   : Item:        787  Priority:         10
-2   : Item:        732  Priority:         10
-3   : Item:         74  Priority:         10
-4   : Item:        560  Priority:         10
-5   : Item:        899  Priority:         10
-6   : Item:        897  Priority:         10
-7   : Item:        893  Priority:         10
-8   : Item:        972  Priority:         10
-9   : Item:        720  Priority:         10
-10  : Item:        653  Priority:         10
-11  : Item:        801  Priority:         10
-12  : Item:        206  Priority:         10
-13  : Item:        300  Priority:         10
-14  : Item:        762  Priority:         10
-15  : Item:        878  Priority:         10
-16  : Item:        330  Priority:         10
-17  : Item:        772  Priority:         10
-18  : Item:        672  Priority:          9
-19  : Item:        697  Priority:          9
-20  : Item:        145  Priority:          9
-21  : Item:        461  Priority:          9
-22  : Item:        488  Priority:          9
-23  : Item:        905  Priority:          9
-24  : Item:        301  Priority:          9
-25  : Item:        490  Priority:          9
-26  : Item:        612  Priority:          8
-27  : Item:        848  Priority:          8
-28  : Item:        930  Priority:          8
-29  : Item:        416  Priority:          8
-30  : Item:        123  Priority:          8
-31  : Item:        190  Priority:          8
-32  : Item:        292  Priority:          8
-33  : Item:        864  Priority:          8
-34  : Item:        390  Priority:          8
-35  : Item:         25  Priority:          8
-36  : Item:        672  Priority:          8
-37  : Item:        192  Priority:          8
-38  : Item:        842  Priority:          8
-39  : Item:        213  Priority:          7
-40  : Item:        325  Priority:          7
-41  : Item:        890  Priority:          7
-42  : Item:        984  Priority:          7
-43  : Item:        309  Priority:          7
-44  : Item:        579  Priority:          7
-45  : Item:        381  Priority:          7
-46  : Item:        275  Priority:          6
-47  : Item:        397  Priority:          6
-48  : Item:        234  Priority:          6
-49  : Item:         76  Priority:          6
-50  : Item:        725  Priority:          6
-51  : Item:        898  Priority:          6
-52  : Item:        352  Priority:          6
-53  : Item:        290  Priority:          6
-54  : Item:        807  Priority:          5
-55  : Item:         47  Priority:          5
-56  : Item:        617  Priority:          5
-57  : Item:        834  Priority:          5
-58  : Item:        711  Priority:          5
-59  : Item:        833  Priority:          5
-60  : Item:        960  Priority:          5
-61  : Item:        562  Priority:          4
-62  : Item:         32  Priority:          4
-63  : Item:        824  Priority:          4
-64  : Item:        342  Priority:          4
-65  : Item:        393  Priority:          4
-66  : Item:        854  Priority:          4
-67  : Item:        533  Priority:          4
-68  : Item:        963  Priority:          3
-69  : Item:          3  Priority:          3
-70  : Item:        714  Priority:          3
-71  : Item:        561  Priority:          3
-72  : Item:        711  Priority:          3
-73  : Item:        534  Priority:          3
-74  : Item:        155  Priority:          3
-75  : Item:         79  Priority:          3
-76  : Item:        120  Priority:          3
-77  : Item:        138  Priority:          3
-78  : Item:        357  Priority:          3
-79  : Item:        283  Priority:          2
-80  : Item:        951  Priority:          2
-81  : Item:        354  Priority:          2
-82  : Item:        999  Priority:          2
-83  : Item:        256  Priority:          2
-84  : Item:        123  Priority:          2
-85  : Item:        387  Priority:          2
-86  : Item:        207  Priority:          2
-87  : Item:        506  Priority:          2
-88  : Item:        352  Priority:          2
-89  : Item:        978  Priority:          2
-90  : Item:        312  Priority:          1
-91  : Item:        142  Priority:          1
-92  : Item:        938  Priority:          1
-93  : Item:        673  Priority:          1
-94  : Item:        280  Priority:          1
-95  : Item:        520  Priority:          1
-96  : Item:        515  Priority:          1
-97  : Item:        515  Priority:          1
-98  : Item:        958  Priority:          1
-99  : Item:        687  Priority:          1
+0   : Item:        360  Priority:         10
+1   : Item:        197  Priority:         10
+2   : Item:        445  Priority:         10
+3   : Item:        366  Priority:         10
+4   : Item:         97  Priority:         10
+5   : Item:        760  Priority:         10
+6   : Item:        965  Priority:         10
+7   : Item:        485  Priority:         10
+8   : Item:        122  Priority:         10
+9   : Item:        832  Priority:         10
+10  : Item:        435  Priority:         10
+11  : Item:        353  Priority:         10
+12  : Item:        643  Priority:          9
+13  : Item:        331  Priority:          9
+14  : Item:        361  Priority:          9
+15  : Item:        514  Priority:          9
+16  : Item:        655  Priority:          9
+17  : Item:        355  Priority:          9
+18  : Item:         18  Priority:          9
+19  : Item:        135  Priority:          9
+20  : Item:        910  Priority:          9
+21  : Item:        939  Priority:          9
+22  : Item:        522  Priority:          9
+23  : Item:        673  Priority:          9
+24  : Item:        237  Priority:          9
+25  : Item:        357  Priority:          8
+26  : Item:        987  Priority:          8
+27  : Item:        394  Priority:          8
+28  : Item:        261  Priority:          8
+29  : Item:        484  Priority:          8
+30  : Item:        977  Priority:          8
+31  : Item:        830  Priority:          8
+32  : Item:        174  Priority:          8
+33  : Item:        271  Priority:          8
+34  : Item:        477  Priority:          8
+35  : Item:         81  Priority:          8
+36  : Item:        494  Priority:          8
+37  : Item:        820  Priority:          7
+38  : Item:        419  Priority:          7
+39  : Item:        912  Priority:          7
+40  : Item:        810  Priority:          7
+41  : Item:        678  Priority:          7
+42  : Item:        768  Priority:          7
+43  : Item:        338  Priority:          7
+44  : Item:        911  Priority:          7
+45  : Item:        305  Priority:          6
+46  : Item:        982  Priority:          6
+47  : Item:        825  Priority:          6
+48  : Item:        158  Priority:          6
+49  : Item:        148  Priority:          6
+50  : Item:         60  Priority:          6
+51  : Item:        924  Priority:          6
+52  : Item:        955  Priority:          5
+53  : Item:        166  Priority:          5
+54  : Item:         49  Priority:          5
+55  : Item:        700  Priority:          5
+56  : Item:         24  Priority:          5
+57  : Item:        417  Priority:          5
+58  : Item:        900  Priority:          5
+59  : Item:        377  Priority:          5
+60  : Item:        692  Priority:          5
+61  : Item:         16  Priority:          5
+62  : Item:        645  Priority:          5
+63  : Item:        318  Priority:          5
+64  : Item:        329  Priority:          5
+65  : Item:        704  Priority:          5
+66  : Item:        133  Priority:          5
+67  : Item:        757  Priority:          4
+68  : Item:        208  Priority:          4
+69  : Item:        217  Priority:          4
+70  : Item:          5  Priority:          4
+71  : Item:        873  Priority:          4
+72  : Item:        670  Priority:          4
+73  : Item:        253  Priority:          4
+74  : Item:        113  Priority:          4
+75  : Item:        868  Priority:          4
+76  : Item:        622  Priority:          3
+77  : Item:        941  Priority:          3
+78  : Item:        409  Priority:          3
+79  : Item:        227  Priority:          3
+80  : Item:        879  Priority:          3
+81  : Item:        653  Priority:          3
+82  : Item:        484  Priority:          2
+83  : Item:        139  Priority:          2
+84  : Item:        545  Priority:          2
+85  : Item:        972  Priority:          2
+86  : Item:        665  Priority:          2
+87  : Item:         27  Priority:          2
+88  : Item:         60  Priority:          2
+89  : Item:        735  Priority:          2
+90  : Item:        413  Priority:          1
+91  : Item:        704  Priority:          1
+92  : Item:        798  Priority:          1
+93  : Item:         92  Priority:          1
+94  : Item:        342  Priority:          1
+95  : Item:        295  Priority:          1
+96  : Item:        840  Priority:          1
+97  : Item:        817  Priority:          1
+98  : Item:        662  Priority:          1
+99  : Item:        714  Priority:          1
 Show get operations:
 Item: 99 Priority: 10
+---- HEAP OUTPUTS ----
+--Data--
+how_many/capacity: 3/3
+- Array -
+Item:         30  Priority:          3
+Item:         20  Priority:          2
+Item:         10  Priority:          1
+--Data--
+how_many/capacity: 4/7
+- Array -
+Item:         40  Priority:          4
+Item:         30  Priority:          3
+Item:         20  Priority:          2
+Item:         10  Priority:          1
+--Data--
+how_many/capacity: 5/7
+- Array -
+Item:         50  Priority:          5
+Item:         40  Priority:          4
+Item:         30  Priority:          3
+Item:         20  Priority:          2
+Item:         10  Priority:          1
 Press <RETURN> to close this window...
