@@ -18,6 +18,11 @@ template<class T>
 struct heap{
     heap():it_arr(NULL), size_cap(0),how_many(0),height(0){}
 
+    //BIG3
+    ~heap();
+    heap(const heap<T>& h);
+    heap<T>& operator =(const heap<T>& h);
+
     //MOD MEMBER FUNCTIONS
     void insert(const T& item);
     T pop(); //return top item and shuffle the node out of range
@@ -31,7 +36,7 @@ struct heap{
 
     //FRIEND FUNCTIONS
     template<class U>
-    friend ostream& operator <<(ostream& outs, heap<U> rhs);
+    friend ostream& operator <<(ostream& outs, heap<U>& rhs);
 
 private:
     //PRIVATE FUNCTIONS
@@ -49,6 +54,28 @@ private:
     size_t size_cap; //capacity of the array
     size_t height; //used to help allocate space appropriately by simulating the array as a tree
 };
+
+template<class T>
+heap<T>::~heap(){
+    delete[] it_arr;
+}
+template<class T>
+heap<T>::heap(const heap<T>& h){
+    this->how_many = h.size();
+    this->size_cap = h.capacity();
+    this->height = h.height;
+    this->it_arr = get_new_arr(h.it_arr, h.capacity(), h.capacity());
+}
+template<class T>
+heap<T>& heap<T>::operator =(const heap<T>& h){
+    if(this != &h){
+        this->how_many = h.size();
+        this->size_cap = h.capacity();
+        this->height = h.height;
+        this->it_arr = get_new_arr(h.it_arr, h.capacity(), h.capacity());
+    }
+    return (*this);
+}
 
 template<class T>
 void heap<T>::insert(const T& item){
@@ -90,8 +117,9 @@ void heap<T>::print() const{
     cout << "--Data--\n";
     cout << "how_many/capacity: " << how_many << "/" << size_cap << endl;
     cout << "- Array -\n";
-    for(int i = 0; i < how_many; i++)
-        cout << it_arr[i] << endl;
+    heap<T> popper(*this);
+    while(popper.size())
+        cout << popper.pop() << endl;
 }
 
 template<class T>

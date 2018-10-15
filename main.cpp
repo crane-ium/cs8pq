@@ -94,6 +94,21 @@ int main()
     pq.insert(99, 10);
     cout << "Item: " << pq.top().get_item() \
          << " Priority: " << pq.top().get_priority() << endl;
+
+    heap<info<int> > hap;
+    hap.insert(info<int>(10, 1));
+    hap.insert(info<int>(20,2));
+    hap.insert(info<int>(30,3));
+    pq = hap;
+    hap.print();
+    heap<info<int> > hap2(hap);
+    hap2.pop();
+    hap2.print();
+    heap<info<int> > hap3;
+    hap3 = hap2;
+    hap3.print();
+    pq.print();
+
     return 0;
 }
 

@@ -2,13 +2,15 @@ Bugs:
 Nothing seemed odd
 
 Issues:
-Using a d-array to control the heap made it less intuitive to replace the head
+-Using a d-array to control the heap made it less intuitive to replace the head
     with the larger child because the head cannot necessarily be deleted, so it
     must be moved to the end of the heap and then the size is reduced beyond it's scope
-I wish i took the time to make a binary tree to control the heap instead. :(
+-I wish i took the time to make a binary tree to control the heap instead. :(
+-Not using a tree seemed to make print more inefficient since i couldn't get
+    it to prin tin proper order unless by creating a copy obj to pop
 
-The program made me hungry for Pop()tarts.
+-The program made me hungry for Pop()tarts.
 
 Notes:
-I'm feeling more comfortable controlling dynamic space, such as that of arrays.
+-I'm feeling more comfortable controlling dynamic space, such as that of arrays.
     Though using vectors would be nice here.

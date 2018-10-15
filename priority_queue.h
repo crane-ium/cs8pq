@@ -24,6 +24,10 @@ public:
     int size() const;
     void print() const;
 
+    //FRIEND FUNC
+    //assigns a new heap to the pqueue! :)
+    pqueue<T>& operator =(heap<info<T> >& rhs);
+
 private:
     heap<info<T> > my_heap; //holds a heap data structure of type info<T>
     //and in this case info<int>
@@ -60,6 +64,11 @@ bool pqueue<T>::is_empty() const{
 template<class T>
 info<T> pqueue<T>::top() const{
     return my_heap.top();
+}
+
+template<class T>
+pqueue<T>& pqueue<T>::operator =(heap<info<T> >& rhs){
+    my_heap = rhs;
 }
 
 
