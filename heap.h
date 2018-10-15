@@ -25,9 +25,9 @@ struct heap{
 
     //CONST MEMBER FUNCTIONS
     bool is_empty() const;
-    size_t size() const;
-    size_t capacity() const;
-    void print() const;
+    size_t size() const; //returns how_many
+    size_t capacity() const; //returns the size of the dynamic array
+    void print() const; //print the array in order
 
     //FRIEND FUNCTIONS
     template<class U>
@@ -46,7 +46,7 @@ private:
     //PRIVATE VARIABLES
     T* it_arr; //Dynamic array that holds all the items
     size_t how_many;
-    size_t size_cap;
+    size_t size_cap; //capacity of the array
     size_t height; //used to help allocate space appropriately by simulating the array as a tree
 };
 
@@ -107,6 +107,7 @@ bool heap<T>::swap_parent(const size_t &i){
         return false;
 }
 
+//
 template<class T>
 bool heap<T>::swap_child(const size_t& i){
     if(is_leaf(i))

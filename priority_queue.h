@@ -13,8 +13,11 @@ public:
     //CTOR
     pqueue();
 
+    //MOD MEMBER FUNCTIONS
     void insert(const T& value, int p);
     info<T> pop();
+
+    //CONST MEMBER FUNCTIONS
     info<T> top() const;
 
     bool is_empty() const;
@@ -22,7 +25,8 @@ public:
     void print() const;
 
 private:
-    heap<info<T> > my_heap;
+    heap<info<T> > my_heap; //holds a heap data structure of type info<T>
+    //and in this case info<int>
 };
 
 

@@ -15,10 +15,12 @@ struct info{
     //MOD MEMBER FUNCTIONS
     T get_item() const;
     int get_priority() const;
+    //OVERLOADED OPERANDS
     bool operator <(const info<T>& rhs);
     bool operator >(const info<T>& rhs);
 
     //FRIEND FUNCTIONS
+    //cout item and priority
     template<class U>
     friend ostream& operator <<(ostream& outs, const info<U>& rhs);
 };

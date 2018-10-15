@@ -69,7 +69,7 @@ int main()
     heap_int.insert(3);
     cout << "Round 3\n";
     heap_int.print();
-    cout << "GO!\n";
+    cout << "POPPING PRINT!\n";
     while(!heap_int.is_empty())
         cout << heap_int.pop() << endl;
     pqueue<int> pq;
@@ -79,6 +79,7 @@ int main()
     pq.insert(4,15);
     pq.insert(5,5);
     pq.print();
+    cout << "Printing by popping pqueue: \n";
     while(!pq.is_empty())
         cout << pq.pop() << endl;
     //--- RANDOM INSERTION ---
